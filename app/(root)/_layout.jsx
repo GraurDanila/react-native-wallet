@@ -1,11 +1,13 @@
 import { useUser } from "@clerk/clerk-expo";
 import { Redirect } from "expo-router";
-import { Stack } from "expo-router";
+import { Stack } from "expo-router/stack";
 
 export default function Layout() {
-    const { isSignedIn } = useUser();
+  const { isSignedIn, isLoaded } = useUser();
 
-if (!isSignedIn) return <Redirect href={'/signed-in'} />;
+  if (!isLoaded) return null; //for a better ux
 
-        return <Stack screenOptions={{ headerShown: flase}} />;
+  if (!isSignedIn) return <Redirect href={"/sign-in"} />;
+
+  return <Stack screenOptions={{ headerShown: false }} />;
 }

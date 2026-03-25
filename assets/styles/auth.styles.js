@@ -8,9 +8,9 @@ export const styles = StyleSheet.create({
     padding: 20,
     justifyContent: "center",
   },
-  illustration: {
-    width: "100%",
+  illustration: { 
     height: 310,
+    width: 300,
     resizeMode: "contain",
   },
   title: {
