@@ -1,3 +1,4 @@
+// API base URL for E-Wallet backend
 // Production  (Render deployment)
 export const API_URL = "https://e-wallet-app-1.onrender.com/api";
 
