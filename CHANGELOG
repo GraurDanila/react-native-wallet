@@ -1,0 +1,22 @@
+# CHANGELOG - React Native Wallet
+
+## [1.0.0] - 2026-03-25
+### Added
+- Autentificare completa cu Clerk (Sign In, Sign Up, OTP)
+- Backend RESTful: GET/POST/DELETE /api/transactions
+- Sumar financiar: sold, venituri, cheltuieli
+- Rate limiting cu Upstash Redis (100 req/10s/IP)
+- FlatList performant cu RefreshControl
+- Componente: BalanceCard, TransactionItem, PageLoader
+
+## [0.2.0] - 2026-03-18
+### Added
+- useTransactions hook cu Promise.all pentru fetch paralel
+- Endpoint /api/health pentru monitoring Render
+- Cron job pentru prevenirea spin-down pe Render free tier
+
+## [0.1.0] - 2026-03-10
+### Added
+- Structura initiala proiect: backend/ si mobile/
+- Configurare PostgreSQL schema (users, transactions)
+- Configurare Clerk si Expo Router
