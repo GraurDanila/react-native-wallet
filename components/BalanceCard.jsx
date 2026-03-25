@@ -2,7 +2,7 @@ import { View, Text } from "react-native";
 import { styles } from "../assets/styles/home.styles";
 import { COLORS } from "../constants/colors";
 
-// Reusable component for E-Wallet UI
+// Reusable  component for E-Wallet UI
 export const BalanceCard = ({ summary }) => {
   return (
     // test
