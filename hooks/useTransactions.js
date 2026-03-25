@@ -1,4 +1,4 @@
-// custom react hook
+// custom  react hook
 
 import { useCallback, useState } from "react";
 import { Alert } from "react-native";
